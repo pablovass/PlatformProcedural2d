@@ -211,26 +211,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4080792905665165240, guid: 09fb317b6676c48f58df742fe279a82b, type: 3}
   m_PrefabInstance: {fileID: 4080792905834364424}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &975948209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975948208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c30bb7c29a0e243a95626a9d5b7237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 6
-  runningSpeed: 2
-  healthPoints: 0
-  manaPoints: 0
-  jumpRaycastDistance: 1.5
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!70 &975948212
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
