@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerControllerTest : MonoBehaviour {
 
     //Variables del movimiento del personaje
-    public float jumpForce = 6f;
+    [SerializeField]private float jumpForce = 6f;
     public float runningSpeed = 2f;
 
     Rigidbody2D rigidBody;
@@ -64,8 +64,8 @@ public class PlayerController : MonoBehaviour {
         if(Input.GetButtonDown("Jump")){
             Jump(false);
         }
-        if (Input.GetButtonDown("Superjump")){
-            Jump(true);
+       if (Input.GetButtonDown("Superjump")){
+           Jump(true);
         }
 
         animator.SetBool(STATE_ON_THE_GROUND, IsTouchingTheGround());
@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
+        
         if (GameManager.sharedInstance.currentGameState == GameState.inGame)
         {
             if (rigidBody.velocity.x < runningSpeed)
@@ -87,6 +88,7 @@ public class PlayerController : MonoBehaviour {
         }else{//Si no estamos dentro de la partida
             rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         }
+        
     }
 
     void Jump(bool superjump)
@@ -106,6 +108,7 @@ public class PlayerController : MonoBehaviour {
                 rigidBody.AddForce(Vector2.up * jumpForceFactor, ForceMode2D.Impulse);
             }
         }
+        
     }
 
     //Nos indica si el personaje está o no tocando el suelo
