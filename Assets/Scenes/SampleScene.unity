@@ -211,6 +211,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4080792905665165240, guid: 09fb317b6676c48f58df742fe279a82b, type: 3}
   m_PrefabInstance: {fileID: 4080792905834364424}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &975948209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975948208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c30bb7c29a0e243a95626a9d5b7237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 8
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!70 &975948212
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -257,7 +273,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_Name
-      value: platform-m (1)
+      value: Ground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_RootOrder
@@ -265,11 +289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.85
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.z
@@ -322,11 +346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4080792905665165243, guid: 09fb317b6676c48f58df742fe279a82b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4080792905665165243, guid: 09fb317b6676c48f58df742fe279a82b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.73
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 4080792905665165243, guid: 09fb317b6676c48f58df742fe279a82b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -371,7 +395,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_Name
-      value: platform-m
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518272794235920505, guid: d33ade984cc554499a44f582302fdd61, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_RootOrder
@@ -379,11 +411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518272794235920506, guid: d33ade984cc554499a44f582302fdd61, type: 3}
       propertyPath: m_LocalPosition.z
